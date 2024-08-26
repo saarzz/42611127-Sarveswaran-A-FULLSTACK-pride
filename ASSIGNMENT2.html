@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        .form-container {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px #000;
+            color: #fff;
+            width: 300px;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-container input[type="submit"],
+        .form-container input[type="reset"] {
+            width: 48%;
+            padding: 10px;
+            margin: 10px 1% 0 1%;
+            border: none;
+            border-radius: 5px;
+            background-color: #444;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .form-container input[type="submit"]:hover,
+        .form-container input[type="reset"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Register</h2>
+        <form action="#" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            <input type="text" name="phone" placeholder="Phone Number" required>
+            <input type="text" name="address" placeholder="Address" required>
+            <div style="display: flex; justify-content: space-between;">
+                <input type="submit" value="Register">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
